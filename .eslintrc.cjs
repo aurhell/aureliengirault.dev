@@ -7,7 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'styled-system'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', '@stylistic'],
   rules: {
@@ -28,5 +28,7 @@ module.exports = {
     '@stylistic/no-trailing-spaces': ['error'],
     '@stylistic/type-annotation-spacing': ['error'],
     '@stylistic/type-generic-spacing': ['error'],
+    '@stylistic/object-curly-newline': ['error', { 'multiline': true }], 
+    '@stylistic/object-curly-spacing': ['error', 'always'],
   },
 }
