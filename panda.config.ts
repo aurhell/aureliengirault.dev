@@ -12,9 +12,39 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      semanticTokens: {
+        colors: {
+          textBase: {
+            value: {
+              base: '{colors.slate.800}',
+              _dark: '{colors.slate.200}',
+            },
+          },
+          textBaseLight: {
+            value: {
+              base: '{colors.slate.600}',
+              _dark: '{colors.slate.800}',
+            },
+          },
+          backgroundBase: {
+            value: {
+              base: '{colors.slate.200}',
+              _dark: '{colors.slate.800}',
+            },
+          },
+        },
+      },
+    },
   },
 
   // The output directory for your css system
   outdir: 'styled-system',
+
+  conditions: {
+    extend: {
+      dark: '.dark &, [data-theme="dark"] &',
+      light: '.light &',
+    },
+  },
 })
