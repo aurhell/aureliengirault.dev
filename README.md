@@ -1,7 +1,6 @@
-# react-ts-panda-start
-Another starter template
+la V2 de mon site perso
 
-## Features
+## Stack
 
 - ⚡️ [Vite](https://github.com/vitejs/vite)
 - ⚛️ [React](https://react.dev/)
