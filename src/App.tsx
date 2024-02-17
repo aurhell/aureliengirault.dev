@@ -21,7 +21,7 @@ const mainLayoutStyle = css({
 
 function Face() {
   return (
-    <img src="face.webp" alt="Aurélien Girault" className={circle({ size: '80' })} />
+    <img src="face.webp" alt="Aurélien Girault" className={circle({ size: { base: '64', _landscape: { base: '32', lg: '80' }, lg: '80' } })} />
   )
 }
 
@@ -35,6 +35,7 @@ function Name() {
         background: '#D3244D linear-gradient(to left, #D3244D 0%, #891DC8 72%)',
         WebkitTextFillColor: 'transparent',
         backgroundClip: 'text',
+        lineHeight: 'tight',
         _dark: {
           background: '#8FCF2E linear-gradient(to right, #8FCF2E 0%, #4EB5CF 80%)',
           WebkitTextFillColor: 'transparent',
@@ -85,9 +86,9 @@ function App() {
 
         <Face />
 
-        <div>
+        <div className={css({ textAlign: 'center' })}>
           <Name />
-          <div className={css({ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', fontWeight: 'bold', fontSize: 'lg' })}>
+          <div className={css({ display: 'flex', flexDirection: 'column', fontWeight: 'bold', fontSize: 'lg', textAlign: { base: 'center', lg: 'left' }, marginTop: { base: 4, lg: 0 } })}>
             <span>🧑‍💻 Développeur front-end</span>
             <span>📍 Rennes (hybride ou remote)</span>
           </div>
