@@ -26,7 +26,7 @@ export default function SocialList({ socials }: { socials: Social[] }) {
           initial={{ y: 300, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
-            duration: 0.5,
+            duration: 0.3,
             delay: 1.6 + index * 0.1,
           }}
           className={hstack({ gap: 3 })}

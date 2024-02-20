@@ -30,9 +30,9 @@ function Face() {
       animate={{ rotate: 360, scale: 1, opacity: 1 }}
       transition={{
         type: 'spring',
-        stiffness: 180,
-        damping: 40,
-        duration: 80,
+        stiffness: 260,
+        damping: 20,
+        duration: 40,
         delay: 1,
       }}
     />
@@ -45,7 +45,10 @@ function Name() {
       initial={{ y: -800, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
-        duration: 0.8,
+        type: 'spring',
+        stiffness: 260,
+        damping: 20,
+        duration: 0.4,
         delay: 0.4,
       }}
     >
@@ -116,7 +119,10 @@ function App() {
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{
-                duration: 0.5,
+                type: 'spring',
+                stiffness: 260,
+                damping: 20,
+                duration: 0.3,
                 delay: 1.4,
               }}
             >🧑‍💻 Développeur front-end</motion.span>
@@ -124,7 +130,10 @@ function App() {
               initial={{ x: 120, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{
-                duration: 0.5,
+                type: 'spring',
+                stiffness: 260,
+                damping: 20,
+                duration: 0.3,
                 delay: 1.6,
               }}
             >📍 Rennes (hybride ou remote)</motion.span>
