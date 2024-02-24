@@ -1,15 +1,9 @@
 interface LinkProps {
   url: string
-  children: React.ReactNode
   style?: string
+  children: React.ReactNode
 }
 
 export default function Link({ url, style, children }: LinkProps) {
-  return (
-    <>
-      <a href={url} className={style}>
-        {children}
-      </a>
-    </>
-  )
+  return <a href={url} className={style}>{children}</a>
 }
