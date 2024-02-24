@@ -21,20 +21,22 @@ const buttonStyle = css({
 export default function SocialList({ socials }: { socials: Social[] }) {
   return (
     <div className={hstack({ gap: 3 })}>
-      { socials.map((social, index) => (
-        <motion.div
-          initial={{ y: 300, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            duration: 0.3,
-            delay: 1.6 + index * 0.1,
-          }}
-          className={hstack({ gap: 3 })}
-          key={social.name}
-        >
-          <Link url={social.url} style={buttonStyle}>{social.icon}</Link>
-        </motion.div>),
-      ) }
+      {
+        socials.map((social, index) =>
+          <motion.div
+            initial={{ y: 300, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 0.3,
+              delay: 1.6 + index * 0.1,
+            }}
+            className={hstack({ gap: 3 })}
+            key={social.name}
+          >
+            <Link url={social.url} style={buttonStyle}>{social.icon}</Link>
+          </motion.div>,
+        )
+      }
     </div>
   )
 }
