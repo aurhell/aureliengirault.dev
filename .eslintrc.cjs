@@ -10,6 +10,11 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs', 'styled-system'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', '@stylistic'],
+  settings: {
+    react: {
+      version: 'detect',
+    }
+  },
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -30,5 +35,6 @@ module.exports = {
     '@stylistic/type-generic-spacing': ['error'],
     '@stylistic/object-curly-newline': ['error', { 'multiline': true }], 
     '@stylistic/object-curly-spacing': ['error', 'always'],
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
   },
 }
