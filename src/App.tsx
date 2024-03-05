@@ -97,7 +97,7 @@ function App() {
     },
     {
       name: 'email',
-      url: 'mailto:contact@agirault.com',
+      url: 'mailto:contact@aureliengirault.dev?subject=Prise%20de%20contact%20Aur%C3%A9lien%20Girault%20depuis%20aureliengirault.dev',
       icon: <IconEmail className={iconStyle} />,
     },
   ]
