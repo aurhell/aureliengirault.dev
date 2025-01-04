@@ -3,7 +3,7 @@ import { circle } from '../styled-system/patterns'
 import { useContext } from 'react'
 import { motion } from 'framer-motion'
 
-import { IconEmail, IconGithub, IconLinkedin, IconX } from '@/components/Icon'
+import { IconEmail, IconGithub, IconLinkedin, IconX, IconBluesky } from '@/components/Icon'
 import SocialList, { Social } from '@/components/SocialList'
 import ButtonThemeToggle from '@/components/ButtonThemeToggle'
 import { ThemeContext } from '@/ThemeProvider'
@@ -94,6 +94,11 @@ function App() {
       name: 'X',
       url: 'https://twitter.com/aurhell_',
       icon: <IconX className={iconStyle} />,
+    },
+    {
+      name: 'Bluesky',
+      url: 'https://bsky.app/profile/aurhell.bsky.social',
+      icon: <IconBluesky className={iconStyle} />,
     },
     {
       name: 'email',
