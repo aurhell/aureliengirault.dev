@@ -3,7 +3,7 @@ import { circle } from '../styled-system/patterns'
 import { useContext } from 'react'
 import { motion } from 'framer-motion'
 
-import { IconEmail, IconGithub, IconLinkedin, IconX, IconBluesky } from '@/components/Icon'
+import { IconEmail, IconGithub, IconLinkedin, IconX, IconBluesky, IconSpotify } from '@/components/Icon'
 import SocialList, { Social } from '@/components/SocialList'
 import ButtonThemeToggle from '@/components/ButtonThemeToggle'
 import { ThemeContext } from '@/ThemeProvider'
@@ -99,6 +99,11 @@ function App() {
       name: 'Bluesky',
       url: 'https://bsky.app/profile/aurhell.bsky.social',
       icon: <IconBluesky className={iconStyle} />,
+    },
+    {
+      name: 'Spotify',
+      url: 'https://open.spotify.com/user/aurel.grlt',
+      icon: <IconSpotify className={iconStyle} />,
     },
     {
       name: 'email',
